@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        div,
+        span {
+            background-color: rgb(209, 209, 209);
+            width: 128px;
+        }
+    </style>
+</head>
+<body>
+    <div><h1>회원가입</h1></div>
+<p><strong>원활한 서비스를 이용을 위해 회원가입을 해주세요</strong></p>
+<form action="" method="post">
+    <label> <strong>아이디</strong>
+        <input type="text" name="uesr=id">
+    </label><br>
+    <label> <strong>이메일</strong>
+        <input type="email" required>
+    </label><br>
+    <label> <strong>비밀번호</strong>
+        <input type="password" name="uesr=pw"> 
+    </label><br>
+    <label> <strong>닉네임</strong>
+        <input type="text" name="uesr=nickname">
+    </label><br>
+    <fieldset class="fieldset">
+        <legend><strong>성별</strong></legend>
+        <ul>
+        <li><input type="radio" name="gender" value="male" id="male">
+        <label for="male"><strong>남성</strong></label></li>
+        <li><input type="radio" name="gender" value="female" id="female">
+        <label for="female"><strong>여성</strong></label></li>
+        <li><input type="radio" name="gender" value="none" id="none">
+        <label for="none"><strong>선택 안함</strong></label></li>
+        </ul>
+    </fieldset>
+    <fieldset class="fieldset">
+        <legend><strong>사용 기술</strong></legend>
+        <ul>
+        <li><input type="checkbox" name="html" id="html">
+        <label for="html"><strong>HTML</strong></label></li>
+        <li><input type="checkbox" name="CSS" id="CSS">
+        <label for="CSS"><strong>CSS</strong></label></li>
+        <li><input type="checkbox" name="JavaScript" id="JavaScript">
+        <label for="JavaScript"><strong>JavaScript</strong></label></li>
+        <li><input type="checkbox" name="Python" id="Python">
+        <label for="Python"><strong>Python</strong></label></li>
+        <li><input type="checkbox" name="Django" id="Django">
+        <label for="Django"><strong>Django</strong></label></li>
+        <li><input type="checkbox" name="GitHub" id="GitHub">
+        <label for="GitHub"><strong>GitHub</strong></label></li>
+        <li><input type="checkbox" name="PostgreSQL" id="PostgreSQL">
+        <label for="PostgreSQL"><strong>PostgreSQL</strong></label></li>
+        </ul>
+    </fieldset>
+    <button type="submit"><strong>회원가입</strong></button>
+</body>
+</html>
