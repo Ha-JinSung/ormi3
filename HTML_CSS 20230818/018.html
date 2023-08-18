@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마진 병합 현상</title>
+    <style>
+        .a,
+        .b 
+        .div {
+            width: 100px;
+            background-color: rgb(214, 146, 43);
+            height: 100px;
+            margin: 20px;
+        }
+        .a {
+            width: 100px;
+            background-color: rebeccapurple;
+            height: 100px;
+            margin: 20px;
+            
+        }
+        .b {
+            width: 100px;
+            background-color: rgb(170, 73, 73);
+            height: 100px;
+            margin: 20px;
+            
+        }
+        .parent {
+            width: 100px;
+            background-color: aqua;
+            height: 100px;
+            margin: 20px;
+        }
+        .child {
+            width: 100px;
+            background-color: rgb(145, 115, 70);
+            height: 100px;
+            margin: 20px;
+        }
+    </style>
+  
+</head>
+<body>
+
+    <div class="a">1</div>
+    <div class="b">2</div>
+
+    <p class="parent">3</p>
+    <div class="child">4</div>
+    
+</body>
+</html>

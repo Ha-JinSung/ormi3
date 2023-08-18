@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+       /*div * 는 div 자손에게만 선택자 적용*/ 
+       * {
+            border: 3px solid red;
+            padding: 10px;
+        }
+        h1 {
+            text-decoration: underline;
+        }
+        p{
+            background-color: bisque;
+        }
+        #hi {
+            font-weight: bold;
+        }
+        .hi1 {
+            color: blue;
+        }
+        [type="button"]{
+            width: 200px;
+        }
+        [class=hi2]{
+            color: chartreuse;
+        }
+        h1,
+        .hi1,
+        #hi {
+            border-width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="hi1">hi</h1>
+        <h2>hi</h2>
+        <p id="hi">hi</p> <!-- id 선택자는 다중사용 불가능 제목등에 한곳에서 씀 -->
+        <p class="hi1">hi</p> <!-- class 선택자는 다중사용 가능  -->
+        <p class="hi2">hi</p>
+        <p>hi</p>
+        <button type="button">hi</button>
+        <button type="submit">hi</button>
+
+    </div>
+
+</body>
+</html>

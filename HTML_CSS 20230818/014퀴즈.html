@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈</title>
+    <style>
+        #id { /* 클래스 100점 */
+            color: red;
+        }
+        .ul a { /* 클래스 + 유형 선택자 :10+1 11점 */
+        color: yellow;
+      }
+      
+      /* 클래스 선택자 10점*/
+      .click {
+        color: green;
+        background: black;
+      }
+      
+      /* 유형 선택자 0점 */
+      html body main section article div ul li p strong span a {
+        background: purple;
+        color: blue;
+      }</style>
+</head>
+<body>
+    <main>
+        <section>
+          <article>
+            <div>
+              <ul class="ul"> <!--클래스지정선택자-->
+                <li>
+                  <p>
+                    <strong>
+                                      <span>
+                      <a href="#" class="click" id="id">
+                        1. 이 글자는 어떤 색일까요?
+                        2. 배경색은 어떤 색일까요?
+                      </a>
+                    </span>
+                    </strong>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+      </main>
+
+</body>
+</html>

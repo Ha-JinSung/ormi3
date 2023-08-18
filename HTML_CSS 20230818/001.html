@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <label for="today-lunch">오늘 메뉴</label>
+    <select name="today-lunch" id="today-lunch">
+    오늘의 점심
+    <section>
+        <option>오트밀</option>
+        <option>등갈비</option>
+        <option>물</option>
+    </section>
+    <optgroup label="점심">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </optgroup>
+
+    <optgroup label="저녁">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </optgroup>
+</select>
+
+<label for="today">오늘</label>
+<input id="today" name="today" list="today-lunch-list">
+<datalist id="today-lunch-list">
+    <option>오트밀</option>
+    <option>등갈비</option>
+    <option>물</option>
+</datalist>
+
+
+
+</body>
+</html>

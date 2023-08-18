@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단위</title>
+    <style>
+        body
+        .p1 {
+            width: 50%;
+            height: 50%;
+            background-color: beige;
+        }
+        .p2 {
+            width: 50vw;
+            background-color: rgb(202, 202, 28);
+        }
+        p {
+            width: 50px; /* px 길이 vw 가로 화면비율 vh 가로 화면비율 */
+            background-color: aqua;
+            font-size: 2em;
+        }
+        div {
+            width: 100px; /* px 길이 vw 가로 화면비율 vh 가로 화면비율 */
+            border: 3px solid red;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <p>hi</p>
+    <p class="p1">hi</p>
+    <p class="p2">hi</p>
+    <div><!-- 2em : 16px *2 32=px -->
+        <p>hi</p> <!-- 2em : 32px *2 = 64px -->
+    </div>
+    
+</body>
+</html>

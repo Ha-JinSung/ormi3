@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 선택자 우선순위</title>
+    <style>/* 밑에있는게 우선적으로 적용 class같은 지정자가 있다면 지정자가 우선*/
+        #hi {
+            color: violet;
+        }
+        .hi {
+            color: gray;
+        }
+        p {
+            color: rebeccapurple !important; /* !important를 강조하면 전부 다 변함*/
+            background-color: rgb(127, 223, 223);
+        }
+
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+
+</body>
+    <p class="hi" id="hi" style="color: gold;">안녕</p>
+    <p>안녕</p>
+</html>

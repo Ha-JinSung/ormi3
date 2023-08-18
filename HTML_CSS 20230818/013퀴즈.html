@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈</title>
+    <style>
+    div #id{
+        color:green ; /*1등*/
+      }
+      p{
+        color:black ; /* 우선순위 최하위*/
+      }
+      #id{
+        color:blue;/*2*/
+      }
+      .class{
+        color:yellow;/*3*/
+      }
+      p{
+        color: white ;
+
+      }
+      p{
+        color: green ; 
+        /* !important의 같은 등급일때 우선순위는 나중에 작성된 명령가 무조건 우선순위가 높은코드에 !important를 쓰면 우선순위 위의 !important가 우선순위 */
+
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="id" class="class">
+              1. 이 글자는 어떤 색일까요?
+          </p>
+         <p id="id" class="class" style="color: red !important;"> <!--우선순위  -->
+              2. 이 글자는 어떤 색일까요??
+          </p>
+      </div>
+      
+      
+
+</body>
+</html>
