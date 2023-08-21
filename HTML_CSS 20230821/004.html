@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container{
+            background:skyblue;
+            margin-bottom:20px;
+          }
+          
+          [class^="box"]{
+            width:100px;
+            height:100px;
+            background:rgb(141, 75, 246);
+            color:#fff;
+            line-height:100px;
+            text-align:center;
+          }
+          [class^="box"]:first-child{
+            background:royalblue;
+          }
+          .box {
+            float: left;
+          }
+          
+        /*.container {
+            overflow: hidden;
+        }*/
+        
+        .container::before {
+            content: 'before';
+        }
+
+        .container::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+          [class^="box"]:last-child{
+            background:salmon;
+          }
+          
+          
+          .box-left{
+              float:left;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        container
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        after
+    </div>
+
+
+
+</body>
+
+</html>

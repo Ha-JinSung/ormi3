@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /*only-child 형제가 없는 요소*/
+        /*li:only-child {
+            color: red;
+        }*/
+        body:only-child {
+            color: red;
+        }
+        ol .item.bold {
+            border: 2px solid gold;      
+        }
+        ol .item {
+            border: 2px solid gold;  
+        }
+        ol {
+            padding: 0;
+            list-style-position: inside;
+        }
+        ol .item,
+        ol>.bold {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li class="item bold">1-1</li>
+        <li class="item">2-2</li>
+        <li class="bold">3-3</li>
+    </ol>                
+    <ol class="item">
+        <li>4-4</li>
+    </ol>
+    <p>
+        hi
+        <strong>5-5</strong>
+        <strong>6-6</strong>
+    </p>            
+
+</body>
+</html>

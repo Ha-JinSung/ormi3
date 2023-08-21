@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .box {
+            background-color: aquamarine;
+        }
+        header {
+            height: 50px;
+            background-color: tan;
+            text-align: center;
+
+        }
+        section {
+            background-color: blue;
+            text-align: center;
+            height: 50px;
+            width: 200px;
+            float: left;
+        }
+        aside {
+            background-color: greenyellow;
+            height: 10px;
+            width: 10px;
+            text-align: center;
+            /*float: right;*/
+
+        }
+        footer {
+            height: 50px;
+            background-color: orangered;
+            text-align: center;
+            clear: both;
+        }
+        .claerfix {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <header>header</header>
+            <div class="claerfix">
+                <section>section > article</section>
+                <aside>aside</aside>
+            </div>
+        <footer>foorer</footer>
+    </div>
+
+</body>
+</html>
