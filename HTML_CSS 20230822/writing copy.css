@@ -1,0 +1,25 @@
+.main1{
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+.title{    
+    margin: auto;
+}
+.title p{
+    margin-top: 10px;
+    color: gray;
+
+}
+.sheet{
+    /* flex-direction: column; */
+    background-color: aqua;
+    box-sizing: border-box;
+    display: flex;
+    border-top: 2px solid black;
+}
+.sheet label{ 
+    /* float: left; */
+    /* border-left: 2px solid black; */
+    flex-direction: row;
+}

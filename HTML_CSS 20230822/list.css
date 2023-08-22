@@ -1,0 +1,34 @@
+.list{
+    width: 1000px;
+    margin:auto;
+}
+.list table{
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 1px solid wheat;
+    text-align: center;
+}
+
+.list table thead{
+    background-color: aqua;
+}
+
+.list table td{
+    border-top: 1px solid wheat;
+    border-bottom: 1px solid wheat;
+}
+
+.list table th,
+.list table td{
+    padding: 8px;
+}
+
+.list table a{
+    text-decoration: none;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+    color: indianred;
+}
+.list-title{
+    text-align: left;
+}

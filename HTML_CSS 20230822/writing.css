@@ -1,0 +1,39 @@
+main{
+    width: 1000px;
+    margin:auto;
+}
+.board-table{
+    width: 100%;
+    border-top: 2px solid black;
+    /* border-bottom: 1px solid wheat; */
+    text-align: center;
+}
+
+.board-table th{
+    background-color: aqua;
+}
+
+.board-table td{
+    /* border-top: 1px solid wheat; */
+    border-bottom: 1px solid wheat;
+}
+
+.board-table th,
+.board-tables td{
+    padding: 8px;
+}
+
+.list table a{
+    text-decoration: none;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+    color: indianred;
+}
+.list-title{
+    text-align: left;
+}
+.button-on{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}

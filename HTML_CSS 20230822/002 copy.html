@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="writing.css">
+    <style>
+    </style>
+</head>
+<body>
+    <main class="write">
+        <h2>글쓰기</h2>
+        <p>내용을 입력해 주세요</p>
+        <form method="post">
+        <table class="board-table">
+            <tbody>
+                <tr>
+                    <th>카테고리</th>
+                    <td class="tal">
+                        <select name="ca" id="category">
+                            <option value="ca1" selected>일반</option>
+                            <option value="ca2">공지사항</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="board-ti">제목</label></th>
+                    <td class="tal">
+                        <input name="board-ti" id="board-ti" type="text" minlength="5" required></td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="board-ti1">내용</label></th>
+                        <td class="tal">
+                            <textarea id="board-ti1" name="board-ti1" required></textarea></td>
+                </tr>
+                <tr>
+                    <th><label for="board-f">파일첨부</label></th>
+                    <td class="tal">
+                        <input id="board-f" name="board-f" type="file" accept="image/jpg">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="button-on">
+        <a href="">목록</a>
+        <button type="reset">초기화</button>
+        <button type="submit">작성</button>
+        </div>
+        </form>
+    </main>
+    
+
+</body>
+</html>
