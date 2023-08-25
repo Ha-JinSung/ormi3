@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- <script>
+ // 조건문 
+ const test = 11;
+ // 만약에 ()안에 있는 값이 true 라면 ~ 코드 블럭안에 코드 실행
+ if(test < 10){
+    //code
+    console.log("참입니까?");
+ }else{
+    console.log("거짓");
+ }
+    </script> -->
+
+
+    <script>
+
+        //과제
+//reduce를 이용해서 홀수만 누적하기
+// 초기값이 없으면 에러가 날수 있는 경우가 있으님 주위 <== 찾기
+
+const num = [1, 2, 3, 4, 5, 6, 7];
+
+const x = (x, y) => {
+  if (y % 2 !== 0) { 
+    return x + y;
+  }
+  return x;
+};
+
+const result = num.reduce(x, 0);
+console.log(result); 
+
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const sumOfOdds = numbers.reduce((accumulator, currentValue) => {
+  if (currentValue % 2 !== 0) {
+    return accumulator + currentValue;
+  }
+  return accumulator;
+}, 0);
+
+console.log(sumOfOdds);
+    </script>
+</body>
+</html>
