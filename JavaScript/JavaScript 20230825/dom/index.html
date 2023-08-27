@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+        
+        .red {
+            background-color: red;
+            width: 10px;
+            transition: 10s;
+        }
+        
+        .img {
+            width: 10px;
+            height: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div></div> -->
+    <!-- <ul>
+
+    </ul>
+    <input/>
+    <button>버튼!</button> -->
+
+
+    <!-- sytle 조작 -->
+    <!-- <p>속성</p> -->
+    date 속성
+
+    <img class="terran battle-cruiser" src="battle-cruiser.png" data-ship-id="324" data-weapons="laser" ata-health="400" data-mana="250" data-skill="yamato-cannon" />
+
+    <!-- <article class="parent">
+        <ol>
+            <li><button class="btn-first" type="button">버튼1</button></li>
+            <li><button type="button">버튼2</button></li>
+            <li><button type="button">버튼3</button></li>
+        </ol>
+    </article> -->
+
+</body>
+<!-- <script>
+    const myDiv = document.querySelector("div")
+    myDiv.addEventListener("click", () => {
+        if (toggle) {
+            myDiv.classList.add("red")
+        } else {
+            myDiv.classList.remove("red")
+        }
+        toggle = !toggle
+    })
+</script> -->
+
+<!-- <script>
+    const mybtn = document.querySelector("button")
+    const myul = document.querySelector("ul")
+    mybiv.addEventListener("click", function() {
+                for (let i = 0; i < 5; i++) {
+                    const myli = document.createElement('li')
+
+                }
+            }
+</script> -->
+<!-- <script>
+    const myBtn = document.querySelector("button");
+    const myUl = document.querySelector("ul");
+
+    myBtn.addEventListener('click', function() {
+        for (let i = 0; i < 5; i++) {
+            const myLi = document.createElement('li');
+            const mydiv = document.createElement('div')
+            const btnDel = document.createElement('button');
+            const btnTxt = document.createTextNode('버튼');
+            my
+            btnDel.append(btnTxt);
+            btnDel.addEventListener('click', () => {
+                myLi.remove();
+            });
+            myLi.append('삭제하기: ', btnDel);
+            myUl.appendChild(myLi);
+        }
+    });
+</script> -->
+
+<!-- <script>
+    const myBtn = document.querySelector("button");
+    const myUl = document.querySelector("ul");
+    const input = document.querySelector("input")
+    myBtn.addEventListener('click', function() {
+        const inputText = input.value;
+        const myLi = document.createElement('li');
+        const btnDel = document.createElement('button');
+        const btnTxt = document.createTextNode('완료');
+        btnDel.append(btnTxt);
+        btnDel.addEventListener('click', () => {
+            myLi.remove();
+        });
+        myLi.append('할일: ', inputtext, btnDel);
+        myUl.appendChild(myLi);
+    });
+</script> -->
+<!-- <script>
+    const target = document.querySelector("p");
+    const targetColor = target.style.color;
+    console.log(target.style.color)
+    target.style.color = "red";
+</script> -->
+
+<!-- <script>
+    //데이터 속성
+    const img = document.querySelector('img')
+    console.log(img.dataset);
+    console.log(img.dataset.shipId);
+</script> -->
+<!-- <script>
+    const btnFirst = document.querySelector('.btn-first');
+    btnFirst.addEventListener('click', (event) => {
+        console.log(event);
+    });
+</script> -->
+
+</html>

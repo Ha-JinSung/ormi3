@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script>
+        //변수이름 e 아니여도됌 안햇갈리게 같은이름씀
+        function createRipple(e) {
+            let ripple = document.createElement("span")
+                //t스판을만들고
+
+            ripple.classList.add("ripple")
+                //스판에 클래스들달고
+
+            cursor.appendChild(ripple)
+                //만들어서 css 이펙트를한다
+
+            //들고온 마우스이벤트의 e 임
+            ripple.style.top = (e.clientY - ripple.clientHeight / 2) + "px"
+            ripple.style.left = (e.clientX - ripple.clientWidth / 2) + "px"
+
+            // 스타일을입힌다.
+
+            ripple.addEventListener("animationend", () => {
+                    cursor.removeChild(ripple)
+                })
+                //에니메이션이끝나면 지운다
+        }
+
+        document.addEventListener("click", (e) => {
+            //여기서 e 안에 마우스위치등있음 document 공짜로만들어줌
+            createRipple(e)
+        })
+    </script>
+</body>
+
+</html>
